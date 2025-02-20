@@ -7,11 +7,39 @@
         mc:Ignorable="d"
         xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
         
-        Title="MainWindow" Height="450" Width="800" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid>
-        <avalonEdit:TextEditor Name="txtCode"
-                               FontFamily="Consolas"
-                               FontSize="10pt"
-                               ShowLineNumbers="True"/>
+        Title="MainWindow" 
+        
+        d:Height="428"
+        d:Width="800"
+        
+        Height="450" 
+        Width="800" 
+        
+        Topmost="True" 
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize">
+    
+    <Grid Margin="10">
+        <Border BorderThickness="2"
+                BorderBrush="#FF3843C4">
+            <Grid ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+        
+                <avalonEdit:TextEditor Name="txtCode"
+                                       Grid.Row="0"
+                                       FontFamily="Consolas"
+                                       FontSize="10pt"
+                                       ShowLineNumbers="True"
+                                       HorizontalScrollBarVisibility="Disabled"
+                                       VerticalScrollBarVisibility="Auto"/>
+                <Button Grid.Row="1"
+                        Width="200"
+                        Height="50" Content="Start typing" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                
+            </Grid>
+        </Border>
     </Grid>
 </Window>
