@@ -1,0 +1,17 @@
+﻿<Window x:Class="AutoTyper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoTyper"
+        mc:Ignorable="d"
+        xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
+        
+        Title="MainWindow" Height="450" Width="800" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <avalonEdit:TextEditor Name="txtCode"
+                               FontFamily="Consolas"
+                               FontSize="10pt"
+                               ShowLineNumbers="True"/>
+    </Grid>
+</Window>
